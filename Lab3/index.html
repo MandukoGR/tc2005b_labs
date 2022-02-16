@@ -7,10 +7,10 @@
     </head>
     <body>
         <header>
-            <h1> Laboratorio 1 </h1>
+            <h1 class = "title"> Laboratorio 1 </h1>
         </header>
         <nav >
-            <p>Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información</p>
+            <p class = "subtitle">Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información</p>
         </nav>
         <section>
             <div class = "preguntasContenedor">
@@ -39,11 +39,13 @@
                 <ol class = "respuestas">
                     <li>Internet es una red de computadoras conectadas entre sí, mientras que la World Wide Web es una colección de páginas que 
                         se asienta en esa red (BBC News, 2019).</li>
-                    <li>Un URL consta principalmente de cuatro partes: Protocolo de comunicación, dominio principal, ruta de acceso y parámetros</li>
-                    <li>Estos métodos son conocidos como métodos de petición y su función es
-                        indicar la acción que se desea realizar para un recurso determinado.</li>
+                    <li>Un URL consta de varias partes: Protocolo de comunicación, subdominio, dominio principal, ruta de acceso, parámetros y etiqueta</li>
+                    <li>Estos métodos son conocidos como métodos de petición y su función es indicar la acción que se desea realizar para un recurso determinado.
+                      En primer lugar, el método GET  solicita una representación de un recurso específico. De igual forma, el método HEAD pide una respuesta , pero sin el cuerpo de la respuesta. Por otro lado,
+                      el método POST se utiliza para enviar una entidad a un recurso en específico. El método PUT reemplaza todas las representaciones actuales del recurso de destino. Finalmente,
+                      el método PATCH se utiliza para palicar modificaciones parciales.
                     <li> Puede utilizarse GET o POST, dependiendo de como esté programada la página. La diferencia radica en como son enviados los datos.
-                        Si se utiliza GET los datos se envían mediante la URL y con POST mediante el protocolo de comunicación. </li>
+                         Si se utiliza GET los datos se envían mediante la URL y con POST mediante el protocolo de comunicación. </li>
                     <li>Se utiliza el método GET para obtener recursos de un servidor.</li>
                     <li>Que todo funciona correctamente.</li>
                     <li>Si el usuario ingresó una ruta incorrecta no es responsabilidad del ingeniero, pero si la ruta ha 
@@ -54,14 +56,51 @@
                     </li>
                     <li>Con HTML 5 no es necesario utilizar tecnologías como flash o actionscript. Además HTML5 tiene soporte para audio y video. También cabe mencionar que,  HTML5 define una sintaxis que es compatible con HTML4 y XHTML 1.0.  </li>
                     <li>thead (título), tbody (cuerpo de tabla), tr (renglón), td (contenido/ columna), tfoot (footer).</li>
-                    
+                    <li>Los principales controles de una forma HTML5 son: campos de entrada de texto, elementos de selección (casillas de verificación y botones de opción),
+                        botones y selector de archivos.</li>
+                    <li> De acuerdo con http://html5test.com el navegador que utilizo (Opera) tiene 474/555 puntos. </li>
+                    <li> El ciclo de vida de los sistemas de información es un enfoque por fases y diseño que afirma que para que un sistema sea desarrollado de mejor manera es necesario un ciclo de actividades. </li>    
+                    <li> En el ciclo de desarrollo se analizan los requisitosy se realiza un diseño base. Este ciclo consiste en diseñar y construir los programas requeridos. </li>      
                 </ol>
             </div>
         </section>
-        <aside >
-        </aside>
+        <div class = "page">
+            <aside >
+                <h1> Acerca de mi </h1>
+                <h2>Armando Gutiérrez Rojo</h2>
+                <h3>A01702748</h3>
+                <img src="pp.jpg" height = 200>
+                <p class ="Yo">Me gusta hacer ejercicio, actividades al aire libre, ver películas, leer y programar. Tengo algo de experiencia en diseño frontend y backend. 
+                    Algunos lenguajes de programación que sé son Python, C++,  R y un poco de Javascript. Me gusta aprender por mi cuenta y trabajar en equipo. 
+                    En este curso me comprometo a aprovechar las actividades para enriquecer mi conocimiento, así como dar mi mayor esfuerzo para entregar un trabajo de calidad al socio formador. 
+                    Mis expectativas son aprender mediante la práctica los temas de la clase y poder experimentar como sería un proyecto real.</p>
+                <h3>Contáctame</h3>
+                <label for="name">Nombre: </label>
+                <input type="text" id="name">
+                <br>
+                <br>
+                <label for="email">Ingresa tu correo electrónico: </label>
+                <input type="email" id="email">
+                <br>
+                <br>
+                <input type="submit" value="Enviar">
+            </aside>
+        </div>
+       
         <footer>
-            <p>Editor utilizado: Visual Studio Code</p>
+            <h3>Fuentes: </h3>
+            <ul>
+                <li>https://es.slideshare.net/MonicaNaranjo20/ciclo-de-vida-de-un-sistema-de-informacion-93192099</li>
+                <li>https://developer.mozilla.org/es/docs/Learn/Forms/Basic_native_form_controls</li>
+                <li>https://www.bbc.com/mundo/noticias-47538812#:~:text=Internet%20es%20una%20inmensa%20red,para%20acceder%20a%20la%20web.</li>
+                <li>https://edytapukocz.com/url-partes-ejemplos-facil/</li>
+                <li>https://developer.mozilla.org/es/docs/Web/HTTP/Methods</li>
+                <li>https://www.aprenderaprogramar.com/index.php</li>
+                <li>https://kinsta.com/es/blog/html-vs-html5/</li>
+                <li>https://blogs.ua.es/pi/2011/01/17/¿cuales-son-las-diferencias-entre-html4-xhtml-1-0-y-html5/</li>
+                <li>http://html5test.com </li>
+                <li>https://www.htmlquick.com/es/reference/tags/table.html</li>
+            </ul>
             
         </footer>
     </body>
