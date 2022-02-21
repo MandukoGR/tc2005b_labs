@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Laboratorio 4 </title> <!-- Título de la pestaña -->
+        <meta charset = "UTF-8"> <!-- Para utilizar caracteres especiales -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+
+    <body>
+        <h1>Laboratorio 4</h1>
+        <div>
+            <p>Entrada: un número pedido con un prompt. Salida: Una tabla con los números del 1 al número dado con sus cuadrados y cubos. Utiliza document.write para producir la salida</p>
+            <p style = "color:blue" id="pregunta1"></p>
+            <p>Entrada: Usando un prompt se pide el resultado de la suma de 2 números generados de manera aleatoria. Salida: La página debe indicar si el resultado fue correcto o incorrecto, y el tiempo que tardó el usuario en escribir la respuesta.</p>
+            <p style = "color:blue" id="pregunta2"></p>
+            <p>Función: contador. Parámetros: Un arreglo de números. Regresa: La cantidad de números negativos en el arreglo, la cantidad de 0's, y la cantidad de valores mayores a 0 en el arreglo.</p>
+            <p style = "color:blue" id="pregunta3"></p>
+            <p>Función: promedios. Parámetros: Un arreglo de arreglos de números. Regresa: Un arreglo con los promedios de cada uno de los renglones de la matriz.</p>
+            <p style = "color:blue" id="pregunta4"></p>
+            <p>Función: inverso. Parámetros: Un número. Regresa: El número con sus dígitos en orden inverso.</p>
+            <p style = "color:blue" id="pregunta5"></p>
+            <p>Crea una solución para un problema de tu elección (puede ser algo relacionado con tus intereses, alguna problemática que hayas identificado en algún ámbito, un problema de programación que hayas resuelto en otro lenguaje, un problema de la ACM, entre otros). El problema debe estar descrito en un documento HTML, y la solución implementada en JavaScript, utilizando al menos la creación de un objeto, el objeto además de su constructor deben tener al menos 2 métodos. Muestra los resultados en el documento HTML.</p>
+            <p>Decidí elegir un problema simple que realicé cuando estaba aprendiendo POO con C++, consiste simplemente 
+                en desplegar nombre, apellido y edad de una persona. Pero utilizando clases y objetos. Decidí realizar este problema simple
+                porque no estoy familiarizado con la sintaxis de JS y creo que esto me puede ayudar.
+            </p>
+            <p style = "color:blue" id="pregunta6"></p>
+        </div>
+        <ul class="collection">
+            <li class="collection-item">¿Qué diferencias y semejanzas hay entre Java y JavaScript?</li>
+            <ol>
+                <li>Java es un lenguaje orientado a objetos mientras que Javascript es basado en prototipos 
+                    , esto permite emular la programación orientada a objetos.
+                </li>
+                <li>Java es un lenguaje tipado y Javascript es debilmente tipado. Las variables en Java estrictamente
+                    necesitan un tipo y no pueden modificarse. En Javascript una misma variable puede variar de tipo.
+                </li>
+                <li>Java es un lenguaje más pesado que Javascript.</li>
+                <li>Java es un lenguaje de servidor, mientras que Javascript sirve para crear código sólo de cliente, sólo de servidor, o de cliente y servidor.</li>
+            </ol>
+            <li class="collection-item"><span style="text-decoration: underline;"></span>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*) </li>
+            <ol>
+                <li>Date.now(): Devuelve valor númerico de la hora actual.</li>
+                <li> Date.parse(): Transforma una cadena que representa una fecha, y devuelve el número de milisegundos desde el 1 de enero de 
+                    1970, hora local 00:00:00.</li>
+                <li>Date.UTC(): Acepta los mismos parámetros que la forma más larga del constructor, y devuelve el número de milisegundos en 
+                    un objeto Date desde el 1 de enero de 1970, hora universal 00:00:00.</li>
+                <li>Date.getDay(): Devuelve el día de la semana entre 0 y 6.</li>
+                <li>Date.getMinutes(): Devuelve los minutos entre 0 y 59.</li>
+            </ol>
+            <li class="collection-item">¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</li>
+            <ol>
+                <li>sort(): Ordena los elementos del arreglo.</li>
+                <li>splice(): Añade o elimina elementos de un arreglo.</li>
+                <li>toString(): Convierte arreglo a string.</li>
+                <li>unshift(): Añade elementos al inicio del arreglo y devuelve la nueva longitud.</li>
+                <li>pop(): Elimina el último elemento del arreglo y devuelve su nueva longitud.</li>
+            </ol>
+            <li class="collection-item">¿Cómo se declara una variable con alcance local dentro de una función? </li>
+            <p>Se utiliza la palabra reservada var. Cabe destacar que si se quiere un alcance de bloque (en un ciclo por ejemplo)
+                se pueden usar las palabras reservadas const y let.
+            </p>
+            <li class="collection-item">¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</li>
+            <p>Hacer esto no es la mejor opción ya que puede ocasionar problemas de mantenibilidad. Además si muchas funciones
+                utilizan la variable puede ser mas dificil identificar errores.
+            </p>
+        </ul>
+    
+        <footer>
+            <h3>Fuentes: </h3>
+            <ul>
+                <li>https://www.itdo.com/blog/javascript-conceptos-fundamentales-scopes-y-alcances-privados/</li>
+                <li>https://tutobasico.com/metodos-arrays-javascript/</li>
+                <li>https://tutobasico.com/date-javascript/</li>
+                <li>https://isdicoders.com/es/blog/es-lo-mismo-java-que-javascript_19381</li>
+                
+            </ul>
+            
+        </footer>
+
+
+    </body>
+    <script src = script.js></script>
+</html>
+
