@@ -1,0 +1,15 @@
+<html>
+    <%- include('../partials/head.ejs') %>
+    <body>
+        <h1>Preguntas</h1>
+        <ul class="collection">
+            <li class="collection-item">¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</li>
+            <p>Porque así si un usuario ha cometido un error se le puede notificar inmediatamente, sin necesidad de esperar la respuesta del servidor. Además de esta forma aseguramos que la información que se enviará al servidor es correcta y evitamos futuros errores</p>
+            <li class="collection-item">¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</li>
+            <p>Se puede modificar el código desde la consola. Agregando: novalidate ="", evitamos que se valide el formulario o input</p>
+            <li class="collection-item">Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</li>
+            <p>Porque generalmente un usuario promedio no modificará el código desde la consola</p>
+        </ul>
+    </body>
+
+</html>
