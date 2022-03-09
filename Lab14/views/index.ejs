@@ -1,0 +1,27 @@
+<html>
+    <%- include('../partials/head.ejs') %>
+    <h1>Laboratorio 14</h1>
+    <% if (usuario) { %>
+        <p>Bienvenido <%= usuario %></p>
+    <% } %>
+    <body>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href=Cookies target = "_blank"> Cookies </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=Sesion target = "_blank"> Sesión </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=preguntas target = "_blank">Preguntas a responder </a>
+            </li>
+        </ul>
+        <% if (usuario) { %>
+            <a href = "/users/logout" class="btn btn-danger">Cerrar sesión</a>
+        <% } else {%>
+            <a href = "/users/login" class="btn btn-primary">Iniciar sesión</a>
+            <%}%>
+
+       
+    </body>
+</html>
