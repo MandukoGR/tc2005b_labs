@@ -1,0 +1,36 @@
+<%- include('../partials/head.ejs') %>
+<% if (ultimo_item) { %>
+    <h2>El último item agregado fue: <%= ultimo_item %> </h2>
+
+<%}%>
+<div class="row">
+    <% if (items.length > 0){ %>
+        <% for (let item of items){ %>
+            <div class="col-12 mb-2 col-md-4">
+                <div class="card">
+                <img src ="<%= item.thumbnailUrl%>" alt = "" class="card-img-top">
+                <div class="card-body">
+                    <h5><%= item.title%></h5>
+                    <p><%= item.precio%></p>
+                    <button class="btn btn-dark">Comprar</button>
+                </div>
+                </div>
+            </div>
+            <% } %>
+        <% } else {%>
+            <h3>No hay items</h3>
+        <% } %>   
+</div>
+<div id = "respuesta_ajax"></div>
+<form action = "/Cookies" method = "POST">
+    <label for = "precio"> Ingresa precio: </label>
+    <input class = "form-control" type = "text" name = "precio" required/>
+    <label for = "id"> id: </label>
+    <input class = "form-control" type = "text" name = "id" required/>
+    <label for = "title"> Ingresa titulo: </label>
+    <input class = "form-control" type = "text" name = "title" required/>
+    <label for = "thumbnailUrl"> Ingresa url de imagen: </label>
+    <input class = "form-control" type = "text" name = "thumbnailUrl" required/>
+    <input class = "btn btn-primary" type = "submit" value = "Agregar item" />
+  </form>
+    
