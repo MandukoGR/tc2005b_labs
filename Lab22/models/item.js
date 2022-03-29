@@ -45,7 +45,7 @@ module.exports = class Item {
     // }
        //Este método servirá para guardar de manera persistente el nuevo objeto. 
       save() {
-        return db.execute('INSERT INTO Item (precio, id, title, thumbnailUrl) VALUES (?, ?, ?,?)', 
+        return db.execute('CALL InsertarItem (?, ?, ?,?)', 
             [this.precio, this.id, this.title, this.thumbnailUrl]);
       }
 
