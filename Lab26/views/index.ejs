@@ -1,0 +1,38 @@
+<html>
+    <%- include('../partials/head.ejs') %>
+    <h1>Laboratorio 26</h1>
+    <% if (usuario) { %>
+        <p>Bienvenido <%= usuario %></p>
+    <% } %>
+    <body>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href=Cookies target = "_blank"> Cookies </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=Sesion target = "_blank"> Sesión </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=preguntas target = "_blank">Preguntas a responder </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=/users/signup target = "_blank">Registrar nuevo usuario </a>
+            </li>
+            
+        </ul>
+        <div id='map' style='width: 400px; height: 300px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoibWFuZHVrb2dyIiwiYSI6ImNsMWt6bnJpcTAwdG0zaW53anV4aWEwanMifQ.YExCePsVa804tBeLNHrKXw';
+            var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11'
+        });
+        </script>
+        <% if (usuario) { %>
+            <a href = "/users/logout" class="btn btn-danger">Cerrar sesión</a>
+        <% } else {%>
+            <a href = "/users/login" class="btn btn-primary">Iniciar sesión</a>
+            <%}%>    
+       
+    </body>
+</html>
